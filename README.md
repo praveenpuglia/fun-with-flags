@@ -1,7 +1,6 @@
-# Demoplate
+# Fun with Flags
 
-A pico setup for simple demos for which you don't need to go to an online service.
-Currently it supports only HTML, CSS & JS.
+A list of country flags made using pure CSS and single element for each flag. Proudly powered by [Dempoplate](https://github.com/praveenpuglia/demoplate).
 
 ## Installation
 ```
