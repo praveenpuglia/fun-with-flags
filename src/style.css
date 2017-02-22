@@ -35,7 +35,7 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     opacity: 0;
     transition: 0.3s;
@@ -154,15 +154,7 @@ body {
     left: 10%;
     display: inline-block;
     top: -15%;
-    text-shadow: 
-        37.5px 37.5px,
-        75px 75px,
-        112.5px 112.5px,
-        150px 150px,
-        187.5px 187.5px,
-        225px 225px,
-        262.5px 262.5px,
-        300px 300px;
+    text-shadow: 37.5px 37.5px, 75px 75px, 112.5px 112.5px, 150px 150px, 187.5px 187.5px, 225px 225px, 262.5px 262.5px, 300px 300px;
 }
 
 .bosnia-and-herzegovina::after {
@@ -288,6 +280,75 @@ body {
     text-align: center;
     text-shadow: 44.083px 60.67px var(--yellow), 71.329px 23.17px var(--yellow), 71.329px -23.17px var(--yellow), 44.083px -60.67px var(--yellow), 0 75px var(--yellow), -44.083px -60.67px var(--yellow), -71.329px -23.17px var(--yellow), -71.329px 23.17px var(--yellow), -44.083px 60.67px var(--yellow), 0 -75px var(--yellow);
 }
+
 .cape-verde::after {
     content: 'cape verde'
+}
+
+.central-african-republic {
+    --blue: #003082;
+    --green: #289728;
+    --yellow: #FFCE00;
+    --red: #D21034;
+    background-image: linear-gradient(to right, transparent calc(50% - 37.5px), var(--red) 0, var(--red) calc(50% + 37.5px), transparent 0), linear-gradient(to bottom, var(--blue) 25%, white 0, white 50%, var(--green) 0, var(--green) 75%, var(--yellow) 0);
+}
+
+.central-african-republic::before {
+    position: absolute;
+    content: '★';
+    color: var(--yellow);
+    top: -10px;
+    left: 50px;
+    font-size: 5rem;
+}
+
+.central-african-republic::after {
+    content: 'central african republic'
+}
+
+.chad {
+    --yellow: #FFCE00;
+    --red: #D21034;
+    --blue: #002569;
+    background-image: linear-gradient(to right, var(--blue) 33.33%, var(--yellow) 0, var(--yellow) 66.66%, var(--red) 0);
+}
+
+.chad::after {
+    content: 'chad';
+}
+
+.chile {
+    --red: #D42E12;
+    --blue: #0035AD;
+    background-image: linear-gradient(to bottom, white 50%, var(--red) 0);
+}
+
+.chile::before {
+    position: absolute;
+    content: '★';
+    background-color: var(--blue);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    font-size: 5rem;
+    width: 150px;
+    height: 150px;
+}
+
+.chile::after {
+    content: 'chile';
+}
+
+.colombia {
+    --yellow: #FCD116;
+    --red: #CE1126;
+    --blue: #003893;
+    background-image: linear-gradient(to bottom, var(--yellow) 50%, var(--blue) 0, var(--blue) 75%, var(--red) 0);
+}
+
+.colombia::after {
+    content: 'colombia';
 }
