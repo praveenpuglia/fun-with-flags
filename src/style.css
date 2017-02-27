@@ -10,12 +10,12 @@ html {
 }
 
 body {
-    background: #e9e9e9;
+    background: #333;
 }
 
 .flags {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -351,4 +351,62 @@ body {
 
 .colombia::after {
     content: 'colombia';
+}
+
+.costa-rica {
+    --blue: #002B7F;
+    --red: #CE1126;
+    background-image: linear-gradient(to bottom, var(--blue) 16.665%, white 0, white 33.33%, var(--red) 0, var(--red) 66.66%, white 0, white 83.32%, var(--blue) 0);
+}
+.costa-rica::after {
+    content: 'Costa Rica'
+}
+
+.cote-divoire {
+    --orange: #F77F00;
+    --green: #009E60;
+    background-image: linear-gradient(to right, var(--orange) 33.33%, white 0, white 66.66%, var(--green) 0);
+}
+
+.cote-divoire::after {
+    content: "Cote d'Ivoire";
+    text-transform: none;
+}
+
+.cuba {
+    --blue: #002A8F;
+    --red: #CF142B;
+    background-image: repeating-linear-gradient(to bottom,var(--blue) 0, var(--blue) 60px, white 60px, white 120px);
+}
+.cuba::before {
+    content: '★';
+    text-indent: -200px;
+    color: white;
+    font-size: 6rem;
+    line-height: 0;
+    position: absolute;
+    border-left: 250px solid var(--red);
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+}
+.cuba::after {
+    content: "Cuba";
+}
+
+.czech-republic {
+    --blue: #11457E;
+    --red: #D7141A;
+    background-image: linear-gradient(to bottom, white 50%, var(--red) 0);
+}
+.czech-republic::before {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    background: var(--blue);
+    position: absolute;
+    transform: translate(-50%) rotateX(45deg) rotateZ(45deg);
+}
+.czech-republic::after {
+    content: "czech republic";
 }
