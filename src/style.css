@@ -11,12 +11,35 @@ html {
 
 body {
     background: #333;
+    counter-reset: flags;
+}
+.info {
+    font-weight: normal;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: white;
 }
 
 .flags {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    position: relative;
+    padding-top: 5rem;
+}
+
+.flags::after {
+    color: white;
+    content: "Total Flags -" counter(flags);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    right: 0;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 0 #000;
 }
 
 .flag {
@@ -25,6 +48,7 @@ body {
     margin: 1rem;
     position: relative;
     overflow: hidden;
+    counter-increment: flags;
 }
 
 .flag::after {
