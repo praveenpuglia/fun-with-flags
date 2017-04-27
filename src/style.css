@@ -528,3 +528,25 @@ body {
 .france::after {
     content: "France";
 }
+
+.gabon {
+    --blue: #4891D9;
+    --green:#009E60;
+    --yellow:#FCD116;
+    background-image: linear-gradient(to bottom, var(--green) 33.33%, var(--yellow) 0, var(--yellow) 66.66%, var(--blue) 0);
+}
+
+.gabon::after {
+    content: 'gabon';
+}
+
+.gambia {
+    --blue: #0C1C8C;
+    --green:#3A7728;
+    --red: #CE1126;
+    background-image: linear-gradient(to bottom, var(--red) 33.33%, white 0, white calc(33.33% + 1rem), var(--blue) 0, var(--blue) calc(66.66% - 1rem), white 0, white 66.66%, var(--green) 0);
+}
+
+.gambia::after {
+    content: 'gambia';
+}
