@@ -475,3 +475,26 @@ body {
 .denmark::after {
     content: "Denmark";
 }
+
+.djibouti {
+    --blue: #6AB2E7;
+    --green: #12AD2B;
+    --red: #D7141A;
+    background-image: linear-gradient(to bottom, var(--blue) 50%, var(--green) 0);
+}
+
+.djibouti::before {
+    content: '★';
+    text-indent: -200px;
+    color: var(--red);
+    font-size: 6rem;
+    line-height: 0;
+    position: absolute;
+    border-left: 250px solid white;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+}
+
+.djibouti::after {
+    content: "Djibouti";
+}
