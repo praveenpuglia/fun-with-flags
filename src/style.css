@@ -496,5 +496,35 @@ body {
 }
 
 .djibouti::after {
-    content: "Djibouti";
+    content: "djibouti";
+}
+
+.estonia {
+    --blue: #4891D9;
+    background-image: linear-gradient(to bottom, var(--blue) 33.33%, black 0, black 66.66%, white 0);
+}
+
+.estonia::after {
+    content: 'estonia';
+}
+
+.finland {
+    --blue: #003580;
+    background-color: white;
+    background-image: linear-gradient(to right, transparent calc(30% - 2rem), var(--blue) 0, var(--blue) calc(30% + 2rem), transparent 0),
+    linear-gradient(to bottom, transparent calc(50% - 2rem), var(--blue) 0, var(--blue) calc(50% + 2rem), transparent 0)
+}
+
+.finland::after {
+    content: "finland";
+}
+
+.france {
+    --blue: #002395;
+    --red: #ED2939;
+    background-image: linear-gradient(to right, var(--blue) 33.33%, white 0, white 66.66%, var(--red) 0);
+}
+
+.france::after {
+    content: "France";
 }
